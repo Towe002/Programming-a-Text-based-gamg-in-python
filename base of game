@@ -1,0 +1,101 @@
+
+import random
+import time
+def TheBeginning():
+ f = 0
+ print("You are walking on the road to the capital when a group of  bandits attack you what would you like to do?") 
+ time.sleep(.5)
+ print("1. Run")
+ time.sleep(.5)
+ print("2. Attack") 
+ time.sleep(.5)
+ print("3. Do nothing")
+ i = int(input(">> "))
+ if i == 1:
+   print("As you begin to run a bandit shoots you in the leg with a bow and then hits you in the head with a bat you are knocked out.")
+   TheAwakening()
+  
+ elif i == 2:
+   print("You you attempt to stab the bandit with your sword and a different bandit hits you in the head with his club you are knocked.")
+   TheAwakening()
+  
+ elif i == 3:
+   print("You do nothing and a bandit knocks you out. What did you expect to happen?")
+   TheAwakening()
+ else:
+   print("please choose one of the possible answers.")
+
+def TheAwakening():
+ print("You awaken in a labyrinth with no idea of how you got there, but you have no time to contemplate these recent happenings, because three goblins jump out and attack you. How would you like to respond?")
+ x = 0
+ a = "1. Attacking with your sad wooden sword."
+ b = "2. Attacking with your impudent magic."
+ c = "3. Attacking using your bow with a torn string."
+ 
+ while x in range(3):
+  x = x + 1
+  print(a)
+  time.sleep(.5)
+  print(b)
+  time.sleep(.5)
+  print(c)
+  i = int(input(">> "))
+  if i == 1 and a == "1. Attacking with your sad wooden sword.":
+    print("You smack the goblin up side the head and the tip of your sword snaps off. The goblin says 'Ouchies!' The sad wooden sword is no longer an effective weapon.")
+    a = ""
+  elif i == 2 and b == "2. Attacking with your impudent magic.":
+    print("You accedentally burn you spellbook in the proccess of arcane magic, and you miss the goblin with your blast of fire. The goblin goes to find the nearest payphone to call the fire department.")
+    b = ""
+  elif i == 3 and c == "3. Attacking using your bow with a torn string.":
+    print("You grab the goblin around the neck with your bow string, and it breaks the string again. The goblin dramatically falls to the ground gasping for breath, and decides to later join a drama club.")
+    c = ""
+  else:
+    x = x - 1
+    print("Please respond using the remaining possible actions.")
+ Thefork()
+  
+
+
+def Thefork():
+  time.sleep(5)
+  print("After your three brutal attacks the goblin is confused and ends up walking in the wrong direction and begins going through what you believe to be a labrinth.")
+  time.sleep(2.5)
+  print("you chase him, because he probably knows what he is doing. after about five minutes of you following him you find his dead body with an arrow through his head. it seems to have been activated by the pressure plate beneath his feet.")
+  time.sleep(2.5)
+  print("you pick up his club and walk a little further to find a fork in the path.The paths are identical.Which direction would you like to go:")
+  f = 0
+  while f in range(1):
+    print("1. Right")
+    print("2. Left")
+    print("3. straight")
+    i = int(input(">>"))
+    if i == 1:
+      print("You continue on for some while when you are ambushed by a Hobgoblin.")
+      i = 2
+      HobGoblin()
+    elif i == 2:
+      print("You skip along merrily untill you collide with a door. You are confused. The door has somethin enscribed on it...")
+      time.sleep(5)
+      print("It seems to be a riddle!")
+      Riddle1()
+    elif i == 3:
+      print("As you continue down the cooridor there is a rumbling in the ground and you realize the cooridoor is colapsing in upon itself.")
+def HobGoblin():
+  while roll in range(3):
+    Roll = random.randint(1,4)
+    if  roll == 1:
+      print("you swing with your club, but you miss")
+      print("The goblin ") 
+def Riddle1():
+  riddle = "a person drew a square it has a length and width of 5. what is it's height?"
+  print(riddle)
+  a = input(">>")
+  if "in" in a or a == "none" or "nothing" in a:
+    print("you win")
+  
+
+    
+  
+
+
+TheBeginning()
